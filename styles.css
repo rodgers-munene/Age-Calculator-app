@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,700;1,400;1,800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+:root{
+    --primaryColor1: hsl(259, 100%, 65%);
+    --primaryColor2:  hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --offWhite: hsl(0, 0%, 94%);
+    --LightGrey: hsl(0, 0%, 86%);
+    --SmokeyGrey: hsl(0, 1%, 44%);
+    --OffBlack: hsl(0, 0%, 8%);
+    --mainFont: 32px;
+
+
+}
+.main-div h2{
+    text-align: center;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--LightGrey);
+    
+}
+.main-div{
+    width: 600px;
+    height: 450px;
+    background-color: var(--white);
+    border-radius: 10px 10px 35% 10px;
+
+}
+form{
+    display: flex;
+    color: var(--SmokeyGrey);
+    margin-top: 40px;
+    margin-left: 10%;
+    font-weight: 700;
+
+    
+}
+form input{
+    padding: 7px;
+    height: 2.5rem;
+    width: 6rem;
+    border: 1px solid var(--LightGrey);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px
+    
+}
+form div label{
+    display: flex;
+    flex-direction: column;
+
+}
+form div p{
+    color: var(--primaryColor2);
+    font-size: 10px;
+    display: none;
+}
+.months, .years{
+    margin-left: 30px;
+}
+hr{
+    width: 80%;
+    color: var(--offWhite);
+    margin-left: 10%;
+    margin-top: 30px;
+}
+.btn{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: var(--primaryColor1);
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+    margin-top: -30px
+    
+}
+img{
+    pointer-events: none;
+}
+.btn .fa{
+    color: var(--white);
+    font-size: 29px;
+}
+.output{
+    margin-top: 40px;
+    margin-left: 10%;
+    font-weight: 700;
+    font-size: 26px;
+}   
+.output span{
+    color: var(--primaryColor1);
+
+}
+
+@media screen and (max-width: 650px) {
+    .main-div{
+        width: 400px;
+        height: 500px;
+    }
+    hr{
+        margin-top: 60px;
+    }
+    .btn{
+        position: absolute;
+        left: 45%;
+    }
+    .output{
+        margin-top: 60px;
+    }
+    form input{
+        height: 3.5rem;
+        width: 5rem;
+    }
+    
+}
