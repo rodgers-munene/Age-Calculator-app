@@ -109,8 +109,8 @@ img{
 
 @media screen and (max-width: 650px) {
     .main-div{
-        width: 400px;
-        height: 500px;
+        width: 370px;
+        height: 530px;
     }
     hr{
         margin-top: 60px;
